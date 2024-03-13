@@ -1,0 +1,110 @@
+/* .post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 30px;
+  }
+  
+  .post-card {
+    background-color: #f9f9f9;
+    border: 1px dashed;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .logout-button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #375779; 
+    color: white; 
+    border: none; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color:#09090a;
+} */
+
+.whole{
+    margin: 3rem;
+}
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 3fr));
+    grid-gap: 1rem;
+    margin: 3rem;
+  }
+  
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f3f3f;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .post-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #3f3f3f;
+    max-width: 60rem;
+    /* text-align: center; */
+  }
+  
+  
+.logout-button {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    /* align-items: flex-end; */
+    /* margin: 0 auto; */
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button-flex{
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: flex-end;
+      /* align-items: flex-end; */
+  
+  }
+  
+  .logout-button:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .post-container {
+      grid-template-columns: 1fr;
+    }
+  }
